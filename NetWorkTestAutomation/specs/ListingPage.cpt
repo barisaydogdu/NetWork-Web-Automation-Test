@@ -1,0 +1,20 @@
+Created by testinium on 26.09.2023
+
+This is a concept file with following syntax for each concept.
+#Listeleme Sayfasının gidilir
+*"classname" tipinde "resultInfo" varlığı kontrol edilir "Listeleme sayfası gelmedi."
+
+#Ürün listeleme sayfasında ilgili ürüne scroll yapılır
+*Sayfada "xpath" ile "//button[contains(@class,'button -secondary -sm relative')]" öğesine scroll yapılır
+*"https://www.network.com.tr/search?searchKey=ceket&page=2" URL'sinin geldiği kontrol edilir
+*"xpath" tipinde "//button[contains(@class,'button -secondary -sm relative')]" varlığı kontrol edilir "Daha fazla göster butonu yok!"
+*"//button[contains(@class,'button -secondary -sm relative')]" yüklenmesi beklenir "xpath"
+*Sayfada "xpath" ile "//button[contains(@class,'button -secondary -sm relative')]" tıklanır
+
+#2. Sayfaya Geçilir ve Kontrol Edilir
+//* 2. sayfaya geçilir.
+*"https://www.network.com.tr/search?searchKey=ceket&page=2" URL'sinin geldiği kontrol edilir
+
+#İndirimli ilk ürün bulunup üstüne tıklanır
+*İlk indirimli "//div[contains(@class,'products__item')]" ürünü bul ve tıkla
+*"3" saniye kadar bekle

@@ -1,0 +1,20 @@
+Created by testinium on 26.09.2023
+#Ürün Sayfasına gidilir
+//*"button -secondary -block -ls0" yüklenmesi beklenir "classname"
+*".product__label" yüklenmesi beklenir "css"
+//*Sayfada "classname" ile "button -secondary -block -ls0" öğesine scroll yapılır
+*"css" tipinde ".product__label" varlığı kontrol edilir "Kombin Satın al butonu yüklenmedi"
+This is a concept file with following syntax for each concept.
+#Rastgele bir ürün bedeni seçilir ve sepete eklenir
+*"radio-box__label" yüklenmesi beklenir "classname"
+*Rastgele bir "radio-box__label" beden seçilir ve tıklanır
+*Ürün sayfasındaki "//div[@class='product__item']/span[@class='product__price -actual']" fiyat alınır
+*Sayfada "xpath" ile "//button[contains(@class,'product__button -addToCart btn -black')]" öğesine scroll yapılır
+*"//button[contains(@class,'product__button -addToCart btn -black')]" yüklenmesi beklenir "xpath"
+*Sayfada "xpath" ile "//button[contains(@class,'product__button -addToCart btn -black')]" tıklanır
+*"2" saniye kadar bekle
+
+#Sepete git butonu tıklanır
+*"//a[contains(.,'Sepete git')]" yüklenmesi beklenir "xpath"
+*Sayfada "xpath" ile "//a[contains(.,'Sepete git')]" tıklanır
+*"2" saniye kadar bekle

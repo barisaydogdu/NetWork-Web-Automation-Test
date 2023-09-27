@@ -1,0 +1,19 @@
+Created by testinium on 26.09.2023
+
+#Sepet sayfasına gidilir
+*"xpath" tipinde "//strong[contains(.,'Alışveriş Sepetim')]" varlığı kontrol edilir "ALışveriş sepetim gözükmüyor"
+This is a concept file with following syntax for each concept.
+#Ürüne Ait Beden ve Fiyat Bilgisi Kontrol Edilir
+*İndirimli "//div[@data-qa='totalAmountToBePaid']" fiyatı al
+*Ürünün orjinal ".summary__body > div:nth-of-type(1) > .summaryItem__value" fiyatını al
+*Eski fiyatın indirimli fiyattan büyük olduğunu kontrol edilir
+//*"2" saniye kadar bekle
+*Sepet sayfasındaki ".-size > .cartItem__attrValue" beden kontrol edilir
+*Sepet sayfasındaki "//div[@data-qa='totalAmountToBePaid']" fiyat kontrol edilir
+*"//div[@class='summary__footer']//div[@class='summaryItem__value']" Ürün fiyatı sepet fiyatıyla karşılaştırılır
+
+
+#Devam et butonuna tıklanır
+* "//button[contains(@class,'n-button large block text-center -primary continueButton')]" yüklenmesi beklenir "xpath"
+*"//button[contains(@class,'n-button large block text-center -primary continueButton')]" elementine tıkla xpath
+//*"2" saniye kadar bekle

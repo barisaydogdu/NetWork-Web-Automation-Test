@@ -1,0 +1,39 @@
+Created by testinium on 21.09.2023
+This is a concept file with following syntax for each concept.
+#Ağ sayfasına gidilir
+*Sayfanın yüklenmesi beklenir
+*"xpath" tipinde "//img[contains(@class,'new-header__logo')]" varlığı kontrol edilir "Logo Yok!"
+*"https://www.network.com.tr/" URL'sinin geldiği kontrol edilir
+
+#Cerez kabul edilir
+*"onetrust-group-container" Çerez var mı kontrol edilir
+*"onetrust-accept-btn-handler" butonu ile kabul edilir
+
+#Arama sekmesine ceket yazdırılır ve arama yapılır
+*"//input[contains(@placeholder,'Elbise, Ceket ara...')]" yüklenmesi beklenir "xpath"
+*"//input[contains(@placeholder,'Elbise, Ceket ara...')]" Arama sekmesine "ceket" yazdırılır
+*Enter tuşuna basılır
+*"https://www.network.com.tr/search?searchKey=ceket" URL'sinin geldiği kontrol edilir
+
+#Network logosuna tıklanır
+*"headerCheckout__logo__img" yüklenmesi beklenir "classname"
+*Sayfada "classname" ile "headerCheckout__logo__img" tıklanır
+
+#Sepet ikonuna tıklanır
+*".-desktop" yüklenmesi beklenir "css"
+*Sayfada "css" ile ".-desktop" tıklanır
+//*"2" saniye kadar bekle
+//*Sayfada "xpath" ile "//div[contains(@class,'mini-cart__body')]" tıklanır
+*"body#home > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > button > svg" yüklenmesi beklenir "css"
+*Sayfada "css" ile "body#home > div:nth-of-type(4) > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > button > svg" tıklanır
+//*"//span[contains(.,'Sepetiniz Henüz Boş')]" yüklenmesi beklenir "xpath"
+driver.findElement(By.xpath(""));
+*"//span[contains(.,'Sepetiniz Henüz Boş')]" yüklenmesi beklenir "xpath"
+*Sepetin boş olduğu kontrol edilir
+*"10" saniye kadar bekle
+
+#Anasayfaya gidilir
+*"//img[contains(@class,'new-header__logo')]" yüklenmesi beklenir "xpath"
+*"xpath" tipinde "//img[contains(@class,'new-header__logo')]" varlığı kontrol edilir "Logo Yok!"
+
+
